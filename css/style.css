@@ -7611,7 +7611,7 @@ html {
   display: none;
   background-color: rgba(84, 116, 253, 0.4);
   position: fixed;
-  z-index: 0;
+  z-index: 100;
   right: 35px;
   bottom: 50px;
   width: 55px;
