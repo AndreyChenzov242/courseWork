@@ -1,0 +1,12 @@
+@mixin btncolor($bg-color) {
+    background-color: $bg-color;
+    border: 1px solid $bg-color;
+    color: white;
+    transition: all 0.5s;
+  
+    &:hover{
+        color: $bg-color;
+        background-color: white;
+        
+    }
+  }
