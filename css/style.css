@@ -7611,7 +7611,7 @@ html {
   display: none;
   background-color: rgba(84, 116, 253, 0.4);
   position: fixed;
-  z-index: 100;
+  z-index: 10;
   right: 35px;
   bottom: 50px;
   width: 55px;
@@ -7619,14 +7619,7 @@ html {
   font-size: 20px;
   color: #fff;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-top: 17px;
+  padding-left: 18.75px;
 }
 /*# sourceMappingURL=style.css.map */
