@@ -554,3 +554,12 @@ html {
     padding-top: 17px;
     padding-left: 18.75px;
 }
+
+
+_::-webkit-:-webkit-full-screen:host:not(:root:root), .safari_only {
+
+    .section{
+        background-attachment:initial !important;
+    }
+  
+  }
