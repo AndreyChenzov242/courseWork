@@ -7150,6 +7150,7 @@ html {
 @media (max-width: 576px) {
   .intro {
     background-position-y: -50px;
+    background-image: url(../img/into-bg-md.png);
   }
 }
 
@@ -7352,6 +7353,8 @@ html {
   height: 100%;
   width: 100%;
   background-color: #f9f8fb;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .burger-menu .header-nav {
   min-width: auto;
@@ -7543,6 +7546,11 @@ html {
     align-items: center;
   }
 }
+@media (max-width: 576px) {
+  .spain-first {
+    background-image: url("../img/spain-bg-1-md.png");
+  }
+}
 
 .spain-second {
   background-image: url("../img/spain-bg-2.png");
@@ -7551,6 +7559,11 @@ html {
   .spain-second {
     display: flex;
     align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .spain-second {
+    background-image: url("../img/spain-bg-2-md.png");
   }
 }
 

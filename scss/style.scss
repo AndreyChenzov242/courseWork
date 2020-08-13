@@ -43,6 +43,7 @@ html {
   align-items: center;
   @media (max-width: 576px) {
     background-position-y: -50px;
+    background-image: url(../img/into-bg-md.png);
   }
 }
 
@@ -252,6 +253,9 @@ html {
   height: 100%;
   width: 100%;
   background-color: #f9f8fb;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   .header-nav {
     min-width: auto;
     width: 100%;
@@ -434,6 +438,9 @@ html {
     display: flex;
     align-items: center;
   }
+  @media (max-width: 576px) {
+    background-image: url("../img/spain-bg-1-md.png");
+  }
 }
 
 .spain-second {
@@ -441,6 +448,9 @@ html {
   @media (max-height: 737px) {
     display: flex;
     align-items: center;
+  }
+  @media (max-width: 576px) {
+    background-image: url("../img/spain-bg-2-md.png");
   }
 }
 
