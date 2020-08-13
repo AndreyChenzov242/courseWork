@@ -7343,7 +7343,7 @@ html {
 }
 
 .burger-menu {
-  background-image: url("../img/spain-bg-1-md.png");
+  background-image: url("../img/spain-bg-1.png");
   display: none;
   justify-content: center;
   align-items: center;
@@ -7355,6 +7355,11 @@ html {
   background-color: #f9f8fb;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (max-width: 576px) {
+  .burger-menu {
+    background-image: url("../img/spain-bg-1-md.png");
+  }
 }
 .burger-menu .header-nav {
   min-width: auto;
