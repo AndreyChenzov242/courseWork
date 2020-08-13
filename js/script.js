@@ -23,29 +23,17 @@ $(function () {
     $("html").animate({ scrollTop: 0 }, 100);
   });
 
-  //   let user = detect.parse(navigator.userAgent);
-  //   console.log(user.browser.family);
-  //   console.log(user.browser.version);
-  //   console.log(user.os.name);
   var userAgent = navigator.userAgent.toLowerCase();
 
-  var Mozila = /firefox/.test(userAgent);
+  var firefox = /firefox/.test(userAgent);
   var Chrome = /chrome/.test(userAgent);
   var Opera = /opera/.test(userAgent);
-  var Safari = /safari/.test(userAgent);
 
-  console.log("Opera", Opera);
-  console.log("Chrome", Chrome);
-  console.log("Mozila", Mozila);
-  console.log("Safari", Safari);
-
-  if (
-    !/chrome/.test(userAgent) &&
-    !/firefox/.test(userAgent) &&
-    !/opera/.test(userAgent)
-  ) {
+  if (!Chrome && !firefox && !Opera) {
     console.log("im safari");
     $(".section").css("background-attachment", "initial");
+    $(".section").css("background-position-y", "0");
+    $(".form-search__btn").css("margin", "0");
   } else {
     console.log("im not safari");
   }
