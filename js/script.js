@@ -27,24 +27,29 @@ $(function () {
   //   console.log(user.browser.family);
   //   console.log(user.browser.version);
   //   console.log(user.os.name);
-  var userAgent = navigator.userAgent.toLowerCase();
+  var isSafari =
+    /constructor/i.test(window.HTMLElement) ||
+    (function (p) {
+      return p.toString() === "[object SafariRemoteNotification]";
+    })(
+      !window["safari"] ||
+        (typeof safari !== "undefined" && safari.pushNotification)
+    );
+  // Internet Explorer 6-11
+  //   var isIE = /*@cc_on!@*/ false || !!document.documentMode;
 
-  var Mozila = /firefox/.test(userAgent);
-  var Chrome = /chrome/.test(userAgent);
-  var Safari = /safari/.test(userAgent);
-  var Opera = /opera/.test(userAgent);
-  console.log("Chrome", Chrome);
-  console.log("Mozila", Mozila);
-  console.log("Safari", Safari);
-  console.log("Opera", Opera);
-  var InternetExplorer = false;
-  if (
-    !/mozilla/.test(userAgent) &&
-    !/firefox/.test(userAgent) &&
-    !/safari/.test(userAgent) &&
-    !/opera/.test(userAgent)
-  ) {
-    Chrome = true;
+  //   // Edge 20+
+  //   var isEdge = !isIE && !!window.StyleMedia;
+
+  //   // Chrome 1 - 71
+  //   var isChrome =
+  //     !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+
+  console.log("isSafari", isSafari);
+  //   console.log("isChrome", isChrome);
+  //   console.log("isEdge", isEdge);
+  //   console.log("isIE", isIE);
+  if (isSafari) {
+    $(".section").css("background-attachment", "initial");
   }
-  //console.log(Chrome);
 });
