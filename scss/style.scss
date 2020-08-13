@@ -133,6 +133,9 @@ html {
 
 .scroll-down {
   cursor: pointer;
+  max-width: 100px;
+  margin: 0 auto;
+
   @media (max-height: 400px) {
     margin-top: 25px;
   }
